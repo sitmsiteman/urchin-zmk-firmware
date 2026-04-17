@@ -135,13 +135,13 @@
 
         // Function keys with modifiers
 
-        fnc_layer {
-            label = "FRow";
+        num_layer {
+            label = "num";
             bindings = <
-&kp F1    &kp F2    &kp F3      &kp F4     &kp F5    &kp F6   &kp F7   &kp F8           &kp F9  &kp F10
-&sk LALT  &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT  &kp F11  &kp F12  &kp PRINTSCREEN  &trans  &trans
-&none     &none     &none       &none      &none     &none    &none    &none            &none   &none
-                                &none      &none     &none    &none
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
+                                          &trans        &trans        &trans        &trans
             >;
         };
 
