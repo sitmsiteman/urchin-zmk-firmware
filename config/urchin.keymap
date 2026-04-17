@@ -60,37 +60,58 @@
         compatible = "zmk,combos";
 
         // both right thumb keys
-
-        combo_accent {
-            timeout-ms = <200>;
-            key-positions = <32 33>;
-            bindings = <&mo ACCENT>;
-        };
-
         // internal-left & external-right thumb keys
-
-        combo_sym2 {
-            timeout-ms = <200>;
-            key-positions = <31 33>;
-            bindings = <&mo SYM2>;
-        };
-
         // both left thumb keys
 
         combo_settings {
             timeout-ms = <200>;
             key-positions = <30 31>;
-            bindings = <&mo SETTINGS>;
+            bindings = <&mo 5>;
         };
 
         // left index & middle fingers (home-row)
         // hold control & space for Adobe workflow
 
-        combo_ctrl_space {
-            timeout-ms = <200>;
-            key-positions = <12 13>;
-            bindings = <&kp LC(SPACE)>;
-            layers = <BASE>;
+        rctrl_combo {
+            bindings = <&kp RCTRL>;
+            key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        ralt_combo {
+            bindings = <&kp RALT>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        esc_combo {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+            layers = <0>;
+        };
+
+        del_combo {
+            bindings = <&kp DEL>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
+
+        quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <13 16>;
+            layers = <0>;
         };
     };
 
@@ -150,25 +171,14 @@
         fn_layer {
             label = "fn";
             bindings = <
-&kp F1       &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7      &kp F8  &kp F9   &kp F10
-&trans       &trans        &trans        &trans        &trans        &trans        &trans      &trans  &kp F11  &kp F12
-&bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &trans  &trans   &sys_reset
-                                         &trans        &trans        &trans        &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+                        &trans  &trans  &trans  &trans
             >;
         };
 
         // Used to type regional accents.
-
-        accent_layer {
-            label = "Accent";
-            bindings = <
-&none        &none        &none        &kp IT_CEGR  &none        &none  &none  &none  &none  &none
-&kp IT_AGRV  &kp IT_IGRV  &kp IT_OGRV  &kp IT_EGRV  &kp IT_EACU  &none  &none  &none  &none  &none
-&none        &none        &none        &kp IT_UGRV  &none        &none  &none  &none  &none  &none
-                                       &none        &none        &none  &none
-            >;
-        };
-
         // Used to change the keyboard's settings.
 
         settings_layer {
