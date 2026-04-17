@@ -21,12 +21,6 @@
 
 // -----------------
 
-&sk {
-    // don't release mods on other mods presses
-
-    ignore-modifiers;
-};
-
 / {
     behaviors {
         // Enables holding the first mod-tap key
@@ -37,9 +31,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "QUICK_TAP";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <185>;
+            quick-tap-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -47,13 +41,6 @@
     macros {
         // sometimes my device thinks a modifier is being held down
         // pressing all modifiers fixes it.
-
-        unstick: unstick {
-            label = "ZM_unstick";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
-        };
     };
 
     combos {
