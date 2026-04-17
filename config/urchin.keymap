@@ -21,6 +21,12 @@
 
 // -----------------
 
+&mt {
+    tapping-term-ms = <185>;
+    quick-tap-ms = <100>;
+    flavor = "tap-preferred";
+};
+
 / {
     behaviors {
         // Enables holding the first mod-tap key
