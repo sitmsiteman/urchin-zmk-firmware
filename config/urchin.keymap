@@ -134,9 +134,9 @@
         etc_layer {
             label = "etc.";
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans  &trans           &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-&trans      &trans           &trans             &trans  &kp PRINTSCREEN  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans      &trans           &trans             &trans  &trans           &trans    &trans     &trans     &trans     &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans           &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+&trans      &trans             &trans           &trans  &kp PRINTSCREEN  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans      &trans             &trans           &trans  &trans           &trans    &trans     &trans     &trans     &trans
                                                 &trans  &trans           &trans    &trans
             >;
         };
