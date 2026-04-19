@@ -47,11 +47,11 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <0>;
             require-prior-idle-ms = <0>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
-            hold-trigger-key-positions = <5 15 25 26 16 6 7 7 8 9 17 18 19 27 28 29>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
         };
 
         lt_r: lt_right {
@@ -89,11 +89,11 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <0>;
             require-prior-idle-ms = <0>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
-            hold-trigger-key-positions = <0 4 10 11 12 13 14 21 22 23 24 0 1 2 3 10 11 12 13 20 21 22 23>;
+            hold-trigger-key-positions = <0 10 11 12 13 14 20 21 22 23 24 1 2 3 4 12>;
         };
 
         lt_l: lt_l {
@@ -183,10 +183,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp Q            &kp W            &kp E             &kp R               &kp T          &kp Y          &kp U                &kp I              &kp O                 &kp P
+&kp Q            &kp W            &kp E             &kp R                    &kp T          &kp Y          &kp U                     &kp I              &kp O                 &kp P
 &hm_left LGUI A  &hm_left LALT S  &hm_left LCTRL D  &hm_shift_left LSHIFT F  &kp G          &kp H          &hm_shift_right RSHIFT J  &hm_right LCTRL K  &hm_right LEFT_ALT L  &hm_right RGUI SEMICOLON
-&kp Z            &kp X            &kp C             &kp V               &kp B          &kp N          &kp M                &kp COMMA          &kp DOT               &kp SLASH
-                                                    &lt_l 4 TAB         &lt_l 1 SPACE  &lt_r 3 ENTER  &lt_r 2 BACKSPACE
+&kp Z            &kp X            &kp C             &kp V                    &kp B          &kp N          &kp M                     &kp COMMA          &kp DOT               &kp SLASH
+                                                    &lt_l 4 TAB              &lt_l 1 SPACE  &lt_r 3 ENTER  &lt_r 2 BACKSPACE
             >;
         };
 
