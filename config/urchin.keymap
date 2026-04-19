@@ -46,8 +46,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <170>;
             quick-tap-ms = <0>;
-            require-prior-idle-ms = <0>;
-            flavor = "tap-unless-interrupted";
+            require-prior-idle-ms = <20>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
@@ -88,8 +88,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <170>;
             quick-tap-ms = <0>;
-            require-prior-idle-ms = <0>;
-            flavor = "tap-unless-interrupted";
+            require-prior-idle-ms = <20>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
