@@ -47,7 +47,7 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <0>;
             require-prior-idle-ms = <0>;
-            flavor = "hold-preferred";
+            flavor = "tap-unless-interrupted";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
@@ -89,7 +89,7 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <0>;
             require-prior-idle-ms = <0>;
-            flavor = "hold-preferred";
+            flavor = "tap-unless-interrupted";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
@@ -124,7 +124,6 @@
         // both left thumb keys
 
         combo_settings {
-            timeout-ms = <200>;
             key-positions = <30 31>;
             bindings = <&mo 5>;
         };
