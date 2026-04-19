@@ -30,8 +30,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
-            quick-tap-ms = <170>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -44,8 +44,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HM_SHIFT_LEFT";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -72,8 +72,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HM_RIGHT";
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
-            quick-tap-ms = <170>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -86,8 +86,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HM_SHIFT_RIGHT";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
