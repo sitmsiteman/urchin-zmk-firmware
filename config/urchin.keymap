@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // Layer definitions
 
@@ -194,10 +195,10 @@
         etc_layer {
             label = "etc.";
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans           &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-&trans      &trans             &trans           &trans  &kp PRINTSCREEN  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans      &trans             &trans           &trans  &trans           &trans    &trans     &trans     &trans     &trans
-                                                &trans  &trans           &trans    &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+&trans      &trans             &trans           &trans                &kp PRINTSCREEN       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans      &trans             &trans           &trans                &trans                &trans    &trans     &trans     &trans     &trans
+                                                &trans                &trans                &trans    &trans
             >;
         };
 
@@ -230,10 +231,10 @@
         fn_layer {
             label = "fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-                        &trans  &trans  &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5          &kp F6          &kp F7          &kp F8           &kp F9   &kp F10
+&trans  &trans  &trans  &trans  &msc SCRL_UP    &mkp MB3        &mmv MOVE_UP    &trans           &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans   &trans
+                        &trans  &trans          &mkp MB1        &mkp MB2
             >;
         };
 
