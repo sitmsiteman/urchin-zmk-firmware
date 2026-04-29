@@ -173,6 +173,11 @@
             key-positions = <13 16>;
             layers = <0>;
         };
+
+        mouse_key {
+            bindings = <&mo 6>;
+            key-positions = <32 33>;
+        };
     };
 
     keymap {
@@ -248,6 +253,15 @@
 &sys_reset      &none  &none  &none       &bt BT_SEL 1  &bt BT_SEL 4  &none   &none  &none  &sys_reset
 &studio_unlock  &none  &none  &none       &bt BT_SEL 2  &bt BT_SEL 5  &none   &none  &none  &studio_unlock
                               &trans      &trans        &trans        &trans
+            >;
+        };
+
+        mouse_key {
+            bindings = <
+&none  &none     &none     &none           &msc SCRL_UP     &none   &none           &mmv MOVE_UP    &none            &none
+&none  &mkp MB3  &mkp MB2  &mkp MB1        &msc SCRL_DOWN   &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&none  &none     &none     &msc SCRL_LEFT  &msc SCRL_RIGHT  &none   &none           &none           &none            &none
+                           &none           &none            &trans  &trans
             >;
         };
     };
