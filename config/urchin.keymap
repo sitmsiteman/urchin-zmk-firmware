@@ -176,7 +176,7 @@
 
         mouse_key {
             bindings = <&mo 6>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
         };
     };
 
@@ -258,10 +258,10 @@
 
         mouse_key {
             bindings = <
-&none  &none     &none     &none           &msc SCRL_UP     &none   &none           &mmv MOVE_UP    &none            &none
-&none  &mkp MB3  &mkp MB2  &mkp MB1        &msc SCRL_DOWN   &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none  &none     &none     &msc SCRL_LEFT  &msc SCRL_RIGHT  &none   &none           &none           &none            &none
-                           &none           &none            &trans  &trans
+&none  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none   &none           &mmv MOVE_UP    &none            &none
+&none  &mkp MB3        &mkp MB2      &mkp MB1        &none            &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&none  &none           &none         &none           &none            &none   &none           &none           &none            &none
+                                     &none           &trans           &trans  &none
             >;
         };
     };
