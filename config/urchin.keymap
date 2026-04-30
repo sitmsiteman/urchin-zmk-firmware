@@ -177,6 +177,7 @@
         mouse_key {
             bindings = <&mo 6>;
             key-positions = <32 31>;
+            timeout-ms = <100>;
         };
     };
 
@@ -212,9 +213,9 @@
         sym_layer {
             label = "sym";
             bindings = <
-&kp LS(NUMBER_6)  &kp LS(NUMBER_4)   &kp PRCNT         &kp LS(NUMBER_8)  &kp LS(NUMBER_7)  &trans  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &trans         &trans
-&kp LS(NUMBER_1)  &kp MINUS          &kp LS(EQUAL)     &kp EQUAL         &kp LS(MINUS)     &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LS(COMMA)  &kp LS(PERIOD)
-&kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(GRAVE)     &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &trans
+&kp LS(NUMBER_6)  &kp LS(NUMBER_4)   &kp PRCNT         &kp LS(NUMBER_8)  &kp LS(NUMBER_7)  &trans  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp SINGLE_QUOTE  &kp LS(SINGLE_QUOTE)
+&kp LS(NUMBER_1)  &kp MINUS          &kp LS(EQUAL)     &kp EQUAL         &kp LS(MINUS)     &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LS(COMMA)     &kp LS(PERIOD)
+&kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(GRAVE)     &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans            &trans
                                                        &trans            &trans            &trans  &trans
             >;
         };
@@ -225,7 +226,7 @@
             label = "num";
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&trans        &trans        &trans        &trans        &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
+&kp GRAVE     &trans        &trans        &trans        &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
 &key_repeat   &trans        &trans        &trans        &trans        &key_repeat   &trans        &trans        &trans        &trans
                                           &trans        &trans        &trans        &trans
             >;
