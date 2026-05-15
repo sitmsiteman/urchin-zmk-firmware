@@ -201,7 +201,7 @@
         etc_layer {
             label = "etc.";
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp ESC
 &trans      &trans             &trans           &trans                &kp PRINTSCREEN       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
 &trans      &trans             &trans           &trans                &trans                &trans    &trans     &trans     &trans     &trans
                                                 &trans                &trans                &trans    &trans
@@ -259,10 +259,10 @@
 
         mouse_key {
             bindings = <
-&none  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none   &none           &mmv MOVE_UP    &none            &none
-&none  &mkp MB3        &mkp MB2      &mkp MB1        &none            &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none  &none           &none         &none           &none            &none   &none           &none           &none            &none
-                                     &none           &trans           &trans  &none
+&none     &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none   &none           &mmv MOVE_UP    &none            &none
+&none     &mkp MB3        &mkp MB2      &mkp MB1        &none            &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&kp LGUI  &kp LALT        &kp LCTRL     &kp LSHIFT      &none            &none   &kp LSHIFT      &kp LCTRL       &kp LALT         &kp LGUI
+                                        &none           &trans           &trans  &none
             >;
         };
     };
