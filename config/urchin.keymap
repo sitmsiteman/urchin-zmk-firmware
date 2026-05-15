@@ -24,6 +24,13 @@
 
 // -----------------
 
+&mmv {
+    time-to-max-speed-ms = <250>;
+    acceleration-exponent = <2>;
+};
+
+&msc { time-to-max-speed-ms = <250>; };
+
 / {
     behaviors {
         // Enables holding the first mod-tap key
