@@ -25,23 +25,17 @@
 // -----------------
 
 / {
+    &mmv {
+        time-to-max-speed-ms = <250>;
+        acceleration-exponent = <2>;
+    };
 
-	&mmv {
-		time-to-max-speed-ms = <250>;
-		acceleration-exponent = <2>;
-	};
-
-	&msc {
-		time-to-max-speed-ms = <200>;
-    		acceleration-exponent = <0>;
-	};
+    &msc { time-to-max-speed-ms = <250>; };
 
     behaviors {
-
         // Enables holding the first mod-tap key
         // by performing a tap-release-hold sequence.
         // To use it: "&qt KEYCODE1 KEYCODE2"
-
 
         hm_left: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
