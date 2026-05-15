@@ -4,6 +4,9 @@
  * SPDX-License-Identifier: MIT
  */
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -23,9 +26,20 @@
 
 / {
     behaviors {
+
         // Enables holding the first mod-tap key
         // by performing a tap-release-hold sequence.
         // To use it: "&qt KEYCODE1 KEYCODE2"
+
+	&mmv {
+		time-to-max-speed-ms = <250>;
+		acceleration-exponent = <2>;
+	};
+
+	&msc {
+		time-to-max-speed-ms = <200>;
+    		acceleration-exponent = <0>;
+	};
 
         hm_left: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
