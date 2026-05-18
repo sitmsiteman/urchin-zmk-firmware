@@ -189,6 +189,13 @@
             key-positions = <32 31>;
             timeout-ms = <100>;
         };
+
+        game_layer {
+            bindings = <&tog 7>;
+            key-positions = <0 9>;
+            layers = <0 7>;
+            timeout-ms = <100>;
+        };
     };
 
     keymap {
@@ -273,6 +280,15 @@
 &none     &mkp MB3        &mkp MB2      &mkp MB1        &none            &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
 &kp LGUI  &kp LALT        &kp LCTRL     &kp LSHIFT      &none            &none   &kp LSHIFT      &kp LCTRL       &kp LALT         &kp LGUI
                                         &none           &trans           &trans  &none
+            >;
+        };
+
+        game {
+            bindings = <
+&kp Q  &kp W  &kp E  &kp R    &kp T      &kp Y      &kp U     &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F    &kp G      &kp H      &kp J     &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C  &kp V    &kp B      &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH
+                     &kp ESC  &kp SPACE  &kp ENTER  &kp BSPC
             >;
         };
     };
