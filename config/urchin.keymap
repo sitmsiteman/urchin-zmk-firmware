@@ -189,13 +189,6 @@
             key-positions = <32 31>;
             timeout-ms = <100>;
         };
-
-        game_layer {
-            bindings = <&tog 7>;
-            key-positions = <0 9>;
-            layers = <0 7>;
-            timeout-ms = <100>;
-        };
     };
 
     keymap {
@@ -267,9 +260,9 @@
         settings_layer {
             label = "Sett.";
             bindings = <
-&bootloader     &none  &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 3  &none   &none  &none  &bootloader
-&sys_reset      &none  &none  &none       &bt BT_SEL 1  &bt BT_SEL 4  &none   &none  &none  &sys_reset
-&studio_unlock  &none  &none  &none       &bt BT_SEL 2  &bt BT_SEL 5  &none   &none  &none  &studio_unlock
+&bootloader     &none  &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 3  &none   &tog 7  &none  &bootloader
+&sys_reset      &none  &none  &none       &bt BT_SEL 1  &bt BT_SEL 4  &none   &none   &none  &sys_reset
+&studio_unlock  &none  &none  &none       &bt BT_SEL 2  &bt BT_SEL 5  &none   &none   &none  &studio_unlock
                               &trans      &trans        &trans        &trans
             >;
         };
@@ -277,7 +270,7 @@
         mouse_key {
             bindings = <
 &none     &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none   &none           &mmv MOVE_UP    &none            &none
-&none     &mkp MB3        &mkp MB2      &mkp MB1        &none            &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&none     &mkp MB2        &mkp MB3      &mkp MB1        &none            &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
 &kp LGUI  &kp LALT        &kp LCTRL     &kp LSHIFT      &none            &none   &kp LSHIFT      &kp LCTRL       &kp LALT         &kp LGUI
                                         &none           &trans           &trans  &none
             >;
