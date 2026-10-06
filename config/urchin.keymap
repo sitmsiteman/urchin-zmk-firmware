@@ -206,7 +206,7 @@
             label = "Base";
             bindings = <
 &kp Q            &kp W            &kp E             &kp R                    &kp T          &kp Y          &kp U                     &kp I              &kp O                 &kp P
-&hm_left LGUI A  &hm_left LALT S  &hm_left LCTRL D  &hm_shift_left LSHIFT F  &kp G          &kp H          &hm_shift_right RSHIFT J  &hm_right LCTRL K  &hm_right LEFT_ALT L  &hm_right RGUI SEMICOLON
+&hm_left LGUI A  &hm_left LALT S  &hm_left LCTRL D  &hm_shift_left LSHIFT F  &kp G          &kp H          &hm_shift_right LSHIFT J  &hm_right LCTRL K  &hm_right LEFT_ALT L  &hm_right RGUI SEMICOLON
 &kp Z            &kp X            &kp C             &kp V                    &kp B          &kp N          &kp M                     &kp COMMA          &kp DOT               &kp SLASH
                                                     &lt_l 4 TAB              &lt_l 1 SPACE  &lt_r 3 ENTER  &lt_r 2 BACKSPACE
             >;
